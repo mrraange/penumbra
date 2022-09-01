@@ -1,13 +1,24 @@
 # penumbra
 
+Скрипт для автоматической установки
+
+<code>curl -s https://raw.githubusercontent.com/mrraange/penumbra/main/update_penumbra.sh > update_penumbra.sh && chmod +x update_penumbra.sh && ./update_penumbra.sh</code>
+
+
+
+
 ПОСЛЕ завершения выполнения скрипта
-1. Запрашиваем монеты в дискорде проекта в канале #testnet-faucet
-![Screenshot_2](https://user-images.githubusercontent.com/100018176/187976175-d59e2b2c-6e1f-486d-9c15-3dfca8768a4e.png)
 
-2. переходим в папку 
-cd penumbra
+<code>grep -A3 address ~/penumbra/validator.json</code> - выводит адрес кошелька Penumbra
 
-nano validator.json
+Запрашиваем монеты в дискорде проекта в канале #testnet-faucet
+
+
+2. Далее 
+
+<code>cd penumbra</code>
+
+<code>nano validator.json</code>
 
 меняем значения:
 
@@ -24,13 +35,13 @@ CRT+X
 
 
 3. Выгружаем файл  validator.json
-cargo run --release --bin pcli -- validator definition upload --file validator.json
+<code>cargo run --release --bin pcli -- validator definition upload --file validator.json</code>
 
 4. Запрашиваем список валидаторов и наблюдаем себя в самом низу
-cargo run --release --bin pcli -- query validator list -i
+<code>cargo run --release --bin pcli -- query validator list -i</code>
 
 5. Делегируем себе на адрес монеты
 
-cargo run --release --bin pcli transaction delegate 100penumbra --to penumbravalid1dcv9p........
+<code>cargo run --release --bin pcli transaction delegate 100penumbra --to penumbravalid1dcv9p........</code>
 
 
