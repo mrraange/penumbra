@@ -1,6 +1,6 @@
 # penumbra
 
-Скрипт для автоматической установк
+Скрипт для автоматической установки
 
 <code>curl -s https://raw.githubusercontent.com/mrraange/penumbra/main/update_penumbra.sh > update_penumbra.sh && chmod +x update_penumbra.sh && ./update_penumbra.sh</code>
 
