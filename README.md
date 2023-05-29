@@ -11,7 +11,7 @@
 
 <code>grep -A3 address ~/penumbra/validator.json</code> - выводит адрес кошелька Penumbra
 
-Запрашиваем монеты в дискорде проекта в канале #testnet-faucet
+Запрашиваем монеты в дискорде проекта в канал #testnet-faucet
 
 
 2. Далее.
