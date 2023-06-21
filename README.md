@@ -6,7 +6,7 @@
 
 
 
-ПОСЛЕ завершения
+ПОСЛЕ 
 
 <code>grep -A3 address ~/penumbra/validator.json</code> - выводит адрес кошелька Penumbra
 
