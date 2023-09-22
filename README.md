@@ -13,7 +13,7 @@
 Запрашиваем монеты в дискорде проекта в канал #testnet-faucet
 
 
-2.v
+2.
 
 <code>cd penumbra</code>
 
