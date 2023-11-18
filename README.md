@@ -1,5 +1,41 @@
 # penumbra
 
+Церемония Пенумбра
+https://summoning.penumbra.zone/
+
+Ceremony contributions require using the command line. Follow the Penumbra Guide to set up pcli and create a wallet.
+
+If you already have pcli installed, make sure you're using v0.63.1:
+
+<code>cargo run --quiet --release --bin pcli -- --version</code>
+
+Contributing
+The coordinator uses the Penumbra testnet to run an anonymous auction for contribution slots. At each slot, the connected participant with the highest bid is selected to contribute.
+
+To join the queue, use pcli ceremony contribute to place a bid:
+
+<code>cargo run --quiet --release --bin pcli -- ceremony contribute --phase 1 --bid 60penumbra --coordinator-address penumbra1qvqr8cvqyf4pwrl6svw9kj8eypf3fuunrcs83m30zxh57y2ytk94gygmtq5k82cjdq9y3mlaa3fwctwpdjr6fxnwuzrsy4ezm0u2tqpzw0sed82shzcr42sju55en26mavjnw4</code>
+
+The minimum bid for this ceremony is 60penumbra.
+
+Once in the queue, you just have to wait until the command completes.
+
+Sharing your Contribution
+
+pcli will output your contribution hash after submission.
+
+Posting your contribution hash publicly allows others to verify that your contribution was included in the transcript!
+
+Reconnecting and Rebidding
+
+To change your bid, you can simply run the command again with a different bid amount. Note that each time you bid with the command above, this adds additional funds to all of the previous bids you've already submitted.
+
+If you get disconnected for some reason, you can simply bid 0penumbra and recover your position in the queue, since all of your previous bids have been recorded.
+
+
+далее неактуально
+
+
 Скрипт 
 <code>curl -s https://raw.githubusercontent.com/mrraange/penumbra/main/update_penumbra.sh > update_penumbra.sh && chmod +x update_penumbra.sh && ./update_penumbra.sh</code>
 
