@@ -1,6 +1,6 @@
 # penumbra
 
-Церемония Пенумбра
+Церемония Пенумбра 
 https://summoning.penumbra.zone/
 
 Ceremony contributions require using the command line. Follow the Penumbra Guide to set up pcli and create a wallet.
