@@ -49,7 +49,7 @@ If you get disconnected for some reason, you can simply bid 0penumbra and recove
 Запрашиваем монеты в дискорде проекта в канал #testnet-faucet
 
 
-2.
+2
 
 <code>cd penumbra</code>
 
