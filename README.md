@@ -12,7 +12,7 @@ If you already have pcli installed, make sure you're using v0.63.1
 Contributing
 The coordinator uses the Penumbra testnet to run an anonymous auction for contribution slots. At each slot, the connected participant with the highest bid is selected to contribute.
 
-To join the queue, use pcli ceremony contribute to place a bid:
+To join the queue, use pcli ceremony contribute to place a bid
 
 <code>cargo run --quiet --release --bin pcli -- ceremony contribute --phase 1 --bid 60penumbra --coordinator-address penumbra1qvqr8cvqyf4pwrl6svw9kj8eypf3fuunrcs83m30zxh57y2ytk94gygmtq5k82cjdq9y3mlaa3fwctwpdjr6fxnwuzrsy4ezm0u2tqpzw0sed82shzcr42sju55en26mavjnw4</code>
 
