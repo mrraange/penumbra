@@ -5,7 +5,7 @@ https://summoning.penumbra.zone/
 
 Ceremony contributions require using the command line. Follow the Penumbra Guide to set up pcli and create a wallet.
 
-If you already have pcli installed, make sure you're using v0.63.1:
+If you already have pcli installed, make sure you're using v0.63.1: 
 
 <code>cargo run --quiet --release --bin pcli -- --version</code>
 
